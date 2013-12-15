@@ -23,12 +23,12 @@
         <div class="header-container">
             <header class="wrapper clearfix">
                 <h1 class="title">CoLibri</h1>
-                <nav>
+               <!-- <nav>
                     <ul>
                         <li><a href="#insert_book">Inserisci un  libro</a></li>
                         
                     </ul>
-                </nav>
+                </nav>-->
             </header>
         </div>
 
@@ -96,8 +96,8 @@
 <div class="book" >
 <div class="bookField"><%= book.author %></div>
 <div class="bookField"><%= book.title %></div>
-<div class="bookField"><input id="where_is_<%= book.id %>" style="width: 70%" type=text value="<%= book.where_is %>"></div>     
-<div class="updateBookField"> <button class="updateBookButton" id="<%= book.id %>">Cambia</button> </div> 
+<div class="bookWhereIs"><input id="where_is_<%= book.id %>" style="width: 70%" type=text value="<%= book.where_is %>"></div>     
+<div class="bookUpdate"> <button class="updateBookButton" id="<%= book.id %>">Cambia</button> </div> 
 </div>
 
 </script>

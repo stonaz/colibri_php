@@ -138,6 +138,7 @@ nav a:hover {
 .main aside {
     color: white;
     padding: 0px 5% 10px;
+    visibility: hidden;
 }
 
 .footer-container footer {
@@ -163,15 +164,6 @@ nav a:hover {
     
 }
 
-.bookField
-{
-    float: left;
-    width:25%;
-    word-wrap:break-word;
-     background-color: #c0c0c0;
-     padding-left: 2px;   
-}
-
 .bookIntest
 {
     float: left;
@@ -181,19 +173,46 @@ nav a:hover {
     /*border: thin solid;
     border-color: #0000FF;*/
     margin-bottom: 5px;
+    margin-right: 2px;
+    padding: 2px;
     
 }
-.formText
+
+.bookField
 {
-    color:#0000FF;
-    
+    float: left;
+    width:25%;
+    word-wrap:break-word;
+     background-color: #c0c0c0;
+     padding: 2px;
+     line-height: 1.2em;
+     border: thin solid;
+    border-color: #0000FF;
+    margin: 2px;
 }
-.updateBookField
+
+.bookWhereIs
+{
+    float: left;
+    width:25%;
+    word-wrap:break-word;
+     background-color: #c0c0c0;
+     padding-left: 2px;
+     line-height: 1.2em;
+}
+
+.bookUpdate
 {
     font-size: 0.9em;
     float: left;
     width:15%;
     text-align: right;
+}
+
+.formText
+{
+    color:#0000FF;
+    
 }
 
 #Books
