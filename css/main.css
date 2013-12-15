@@ -169,7 +169,8 @@ nav a:hover {
    ========================================================================== */
 .searchIntest
 {
-    float: left;    
+    float: left;
+    padding:2px;
 }
 
 .book
@@ -246,7 +247,7 @@ nav a:hover {
     background-color: #c0c0c0;
     border-radius: 4px;
     width: 100%;
-    min-height: 100px;
+    min-height: 120px;
     
 }
 
@@ -324,7 +325,7 @@ nav a:hover {
         background-color: #c0c0c0;
         border-radius: 4px;
         width: 100%;
-        min-height: 50px;
+        min-height: 60px;
         
     }
 
