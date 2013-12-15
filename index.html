@@ -38,14 +38,15 @@
                 <article>
                     <header>
                         <div id="Search">
-                            <div style="float: left;">
-                           Autore<br> <input id ="authorSearch" type="text"><br>
+                            <div class="searchIntest">
+                       <strong>Autore</strong>    <br>
+                           <input id ="authorSearch" type="text"><br>
                             </div>
-                            <div style="float: left;">
-                           Titolo<br> <input id ="titleSearch" type="text"><br>
+                            <div class="searchIntest">
+                         <strong>Titolo</strong>  <br> <input id ="titleSearch" type="text"><br>
                             </div>
                             
-                            <div style="float: left;">
+                            <div class="searchIntest">
                                 <br>
                            <button onclick=getBooks()>Cerca</button>
                             </div>
@@ -96,7 +97,7 @@
 <div class="book" >
 <div class="bookField"><%= book.author %></div>
 <div class="bookField"><%= book.title %></div>
-<div class="bookWhereIs"><input id="where_is_<%= book.id %>" style="width: 70%" type=text value="<%= book.where_is %>"></div>     
+<div class="bookWhereIs"><input id="where_is_<%= book.id %>" style="width: 90%" type=text value="<%= book.where_is %>"></div>     
 <div class="bookUpdate"> <button class="updateBookButton" id="<%= book.id %>">Cambia</button> </div> 
 </div>
 

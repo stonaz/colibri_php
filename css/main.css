@@ -74,22 +74,22 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid #3F3F66;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid #3F3F66;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #0B3E80;
 }
 
 .title {
-    color: white;
+    color: #F54E0C;
 }
 
 /* ==============
@@ -162,6 +162,13 @@ nav a:hover {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.searchIntest
+{
+    float: left;
+    background-color: #c0c0c0;
+    
+}
+
 .book
 {
     clear: both;
@@ -173,14 +180,18 @@ nav a:hover {
 {
     float: left;
     width:25%;
-    background-color: #c0c0c0;
+    background-color: #e44d26;
     font-weight: bold;
     /*border: thin solid;
     border-color: #0000FF;*/
     margin-bottom: 5px;
     margin-right: 2px;
     padding: 2px;
-    
+/*    border: 1px solid #000000;
+*/    /*border-top: 2px solid #0000FF;*/
+    border-radius: 4px;
+/*    box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+*/    
 }
 
 .bookField
@@ -192,7 +203,8 @@ nav a:hover {
      padding: 2px;
      line-height: 1.2em;
      border: thin solid;
-    border-color: #0000FF;
+    border-color: #e44d26;
+    border-radius: 4px;
     margin: 2px;
 }
 
@@ -210,7 +222,7 @@ nav a:hover {
 
 .formText
 {
-    color:#0000FF;
+    color:#e44d26;
     
 }
 
@@ -218,14 +230,17 @@ nav a:hover {
 {
     
     clear: both;
-    overflow: auto;
-    max-height: 300px;
+/*    overflow: auto;
+    max-height: 500px;*/
     margin-top: 5px;
     background-color: #c0c0c0;
     
 }
 
-
+#Search
+{
+    background-color: #c0c0c0;
+}
 
 
 
@@ -268,14 +283,25 @@ nav a:hover {
         float: left;
         width:15%;
         text-align: right;
-        visibility: visible;
+        display: inline;
     }
     
     .main aside {
     color: white;
     padding: 0px 5% 10px;
-    visibility: visible;
+    display: inline;
     }
+    
+    #Books
+{
+    
+    clear: both;
+    overflow: auto;
+    max-height: 500px;
+    margin-top: 5px;
+    background-color: #c0c0c0;
+    
+}
 
 /* ========================
     INTERMEDIATE: IE Fixes

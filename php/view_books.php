@@ -7,11 +7,11 @@ $rows=array();
 $sql="SELECT * from  `books` where 1 ";
 if ($title)
     {
-        $sql.= " and title='$title'";
+        $sql.= " and title like '%$title%'";
     }
 if ($author)
     {
-        $sql.= " and author='$author'";
+        $sql.= " and author like '%$author%'";
     }
 
 $result = $mysqli->query($sql) or die ('no query: '.$php_errormsg);
