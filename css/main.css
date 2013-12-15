@@ -149,6 +149,11 @@ nav a:hover {
 .bookUpdate
 {
     display: none;
+    font-size: 0.9em;
+        float: left;
+        width:15%;
+        text-align: right;
+        
 }
 
 /* ===============
@@ -164,9 +169,7 @@ nav a:hover {
    ========================================================================== */
 .searchIntest
 {
-    float: left;
-    background-color: #c0c0c0;
-    
+    float: left;    
 }
 
 .book
@@ -185,7 +188,7 @@ nav a:hover {
     /*border: thin solid;
     border-color: #0000FF;*/
     margin-bottom: 5px;
-    margin-right: 2px;
+    margin-right: 5px;
     padding: 2px;
 /*    border: 1px solid #000000;
 */    /*border-top: 2px solid #0000FF;*/
@@ -234,15 +237,25 @@ nav a:hover {
     max-height: 500px;*/
     margin-top: 5px;
     background-color: #c0c0c0;
+    border-radius: 4px;
     
 }
 
 #Search
 {
     background-color: #c0c0c0;
+    border-radius: 4px;
+    width: 100%;
+    min-height: 100px;
+    
 }
 
-
+#BooksContainer
+{
+    background-color: #c0c0c0;
+    border-radius: 4px;
+    clear: both;
+}
 
 
 
@@ -290,18 +303,30 @@ nav a:hover {
     color: white;
     padding: 0px 5% 10px;
     display: inline;
+    border-radius: 4px;
+
     }
     
     #Books
-{
-    
-    clear: both;
-    overflow: auto;
-    max-height: 500px;
-    margin-top: 5px;
-    background-color: #c0c0c0;
-    
-}
+    {
+        
+        clear: both;
+        overflow: auto;
+        max-height: 500px;
+        margin-top: 5px;
+        background-color: #c0c0c0;
+        border-radius: 4px;
+        
+    }
+
+    #Search
+    {
+        background-color: #c0c0c0;
+        border-radius: 4px;
+        width: 100%;
+        min-height: 50px;
+        
+    }
 
 /* ========================
     INTERMEDIATE: IE Fixes
