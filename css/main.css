@@ -139,11 +139,16 @@ nav a:hover {
     color: white;
     padding: 0px 5% 10px;
     visibility: hidden;
-}
+    }
 
 .footer-container footer {
     color: white;
     padding: 20px 0;
+}
+
+.bookUpdate
+{
+    visibility: hidden;
 }
 
 /* ===============
@@ -201,13 +206,7 @@ nav a:hover {
      line-height: 1.2em;
 }
 
-.bookUpdate
-{
-    font-size: 0.9em;
-    float: left;
-    width:15%;
-    text-align: right;
-}
+
 
 .formText
 {
@@ -261,6 +260,21 @@ nav a:hover {
 
     nav li:last-child a {
         margin-right: 0;
+    }
+    
+    .bookUpdate
+    {
+        font-size: 0.9em;
+        float: left;
+        width:15%;
+        text-align: right;
+        visibility: visible;
+    }
+    
+    .main aside {
+    color: white;
+    padding: 0px 5% 10px;
+    visibility: visible;
     }
 
 /* ========================
