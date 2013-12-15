@@ -61,7 +61,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 14px/24px Helvetica, Helvetica Neue, Arial;
 }
 
 .wrapper {
@@ -156,9 +156,56 @@ nav a:hover {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.book
+{
+    clear: both;
+   background-color: #c0c0c0;
+    
+}
 
+.bookField
+{
+    float: left;
+    width:25%;
+    word-wrap:break-word;
+     background-color: #c0c0c0;
+     padding-left: 2px;   
+}
 
+.bookIntest
+{
+    float: left;
+    width:25%;
+    background-color: #c0c0c0;
+    font-weight: bold;
+    /*border: thin solid;
+    border-color: #0000FF;*/
+    margin-bottom: 5px;
+    
+}
+.formText
+{
+    color:#0000FF;
+    
+}
+.updateBookField
+{
+    font-size: 0.9em;
+    float: left;
+    width:15%;
+    text-align: right;
+}
 
+#Books
+{
+    
+    clear: both;
+    overflow: auto;
+    max-height: 300px;
+    margin-top: 5px;
+    background-color: #c0c0c0;
+    
+}
 
 
 

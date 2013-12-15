@@ -6,9 +6,13 @@ function postBook() {
         var author=$("#author").val();
         //var author="tonaz";
         var where_is=$("#where_is").val();
-        
+        if (where_is.length < 1 || author.length < 1 || title.length < 1) {
+            $("#formError").html("Devi riempire tutti i campi !");
+            return false;
+        }
+        console.log($("#where_is").val().length)
         console.log('where_is '+where_is)
-        var ok=confirm("Add book ?");
+        var ok=confirm("Aggiungere il libro?");
 	if (ok==true)
 	{
 	$.ajax({
@@ -18,10 +22,36 @@ function postBook() {
 		dataType: 'json',
 		success: function(response){	
 			//reloadNodeDiv(nodeSlug)
-			alert("Your book has been added!");
+			alert("Libro aggiunto!");
 			}
         
 		});
+        getBooks();
+	  }
+}
+
+function updateBook(id,where_is) {
+/*
+ * update a book
+ */
+	//var where_is=$("#where_is").val();
+        
+        //console.log('where_is '+where_is)
+        var ok=confirm("Modificare il libro ?");
+	if (ok==true)
+	{
+	$.ajax({
+		type: "POST",
+		url: 'php/update_book.php',
+		data: { "id":id,"where_is": where_is},
+		dataType: 'json',
+		success: function(response){	
+			//reloadNodeDiv(nodeSlug)
+			alert("Libro modificato!");
+			}
+        
+		});
+        getBooks();
 	  }
 }
 
@@ -42,7 +72,7 @@ function getBooks()
         data:args,
         success: function(response){
          //printVolumi(response,0,args);
-         console.log(response);
+         //console.log(response);
        printBooks(response)
       
           }
@@ -66,11 +96,15 @@ $("#Intestazione").append(compiledTmpl);
    var tmplMarkup = $('#templateBook').html();   
    _.each(data, function(b,i){
       
-    //  buttonID="Vol-"+v.volume+"-"+i
+      var buttonID=b.id
       var output = _.template(tmplMarkup, { book : b } );
       $("#Books").append(output);
-      //var button=i
-
+      $("#"+buttonID).on("click",function(){
+        var where_is=$("#where_is_"+buttonID).val();
+      updateBook(buttonID,where_is)
+      
+      });
+      
 
    })
    

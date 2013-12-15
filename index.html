@@ -51,7 +51,11 @@
                             </div>
                         </div>
                       <div style="clear: both;" id="Intestazione">  </div>
-                      <div id="Books"></div>
+                      
+                        <div class="bookIntest">Autore</div>
+<div class="bookIntest">Titolo</div>
+<div class="bookIntest">Dove sta</div> 
+                  <div id="Books">    </div>
                     </header>
                     <section>
                          <h3>
@@ -65,14 +69,15 @@
                     </footer>
                 </article>
 
-                <aside>
+                <aside id="insertBook">
                     
                         <a name="insert_book">
-                            Inserisci un libro:<br>
+                           <p class="formText"><strong>Inserisci un libro:</strong></p>
                            Titolo<br> <input id ="title" type="text"><br>
                            Autore<br> <input id ="author" type="text"><br>
                            Dove sta<br> <input id ="where_is" type="text"><br>
                            <button onclick=postBook()>Ok</button>
+                           <div class="formText" id ="formError"></div>
                         </a>
                 </aside>
 
@@ -88,9 +93,12 @@
 <strong><%= item %>  </strong><%= count %>
 </script>
 <script id="templateBook" type="text/template">
-    <div>
-<%= book.author %> &nbsp;  <%= book.title %> &nbsp; <%= book.where_is %> &nbsp;       
-    </div>
+<div class="book" >
+<div class="bookField"><%= book.author %></div>
+<div class="bookField"><%= book.title %></div>
+<div class="bookField"><input id="where_is_<%= book.id %>" style="width: 70%" type=text value="<%= book.where_is %>"></div>     
+<div class="updateBookField"> <button class="updateBookButton" id="<%= book.id %>">Cambia</button> </div> 
+</div>
 
 </script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
