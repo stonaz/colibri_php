@@ -7,13 +7,13 @@ $rows=array();
 $sql="SELECT * from  `books` where 1 ";
 if ($title)
     {
-        $sql.= " and title like '%$title%'";
+        $sql.= " and title like '%$title%' ";
     }
 if ($author)
     {
-        $sql.= " and author like '%$author%'";
+        $sql.= " and author like '%$author%' ";
     }
-
+$sql.=" order by author";
 $result = $mysqli->query($sql) or die ('no query: '.$php_errormsg);
 while($row = $result->  fetch_assoc())
 {
