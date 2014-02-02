@@ -1,8 +1,8 @@
 <?PHP
 require 'dbconn.php'; // functions used in the script
-$title=$_POST['title'];
-$author=$_POST['author'];
-$where_is=$_POST['where_is'];
+$title=addslashes($_POST['title']);
+$author=addslashes($_POST['author']);
+$where_is=addslashes($_POST['where_is']);
 //$dbconn = pg_connect ("host=192.168.1.14 port=5432 dbname=ruggeri user=postgres password=Superman123") or die ('no db');
 //header('Content-Type: application/json'); //for correct output in browsers
 $sql="INSERT INTO `books`(`title`, `author`, `where_is`) VALUES ('$title','$author','$where_is')";
